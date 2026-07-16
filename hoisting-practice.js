@@ -1,48 +1,39 @@
 // ===============================
+// Task 4: Hoisting Practice
+// ===============================
+
+
+// ===============================
 // 1. var Hoisting
 // ===============================
 
-console.log(a); // Output: undefined
+console.log(a);
 
 var a = 10;
 
-console.log(a); // Output: 10
-
-// Explanation:
-// 'var' is hoisted.
-// Only the declaration is moved to the top.
-// Initial value is undefined until assignment.
+console.log(a);
 
 
 // ===============================
 // 2. let Hoisting
 // ===============================
 
-// console.log(b); // Error
+// console.log(b);
 
 let b = 20;
 
-console.log(b); // Output: 20
-
-// Explanation:
-// 'let' is hoisted but kept in the
-// Temporal Dead Zone (TDZ).
-// Cannot access before declaration.
+console.log(b);
 
 
 // ===============================
 // 3. const Hoisting
 // ===============================
 
-// console.log(c); // Error
+// console.log(c);
 
 const c = 30;
 
-console.log(c); // Output: 30
-
-// Explanation:
-// 'const' is also hoisted but in TDZ.
-// Cannot access before declaration.
+console.log(c);
 
 
 // ===============================
@@ -55,18 +46,12 @@ function greet() {
     console.log("Hello");
 }
 
-// Output:
-// Hello
-
-// Explanation:
-// Function declarations are completely hoisted.
-
 
 // ===============================
 // 5. Function Expression
 // ===============================
 
-// sayHi(); // Error
+// sayHi();
 
 var sayHi = function () {
     console.log("Hi");
@@ -74,26 +59,18 @@ var sayHi = function () {
 
 sayHi();
 
-// Explanation:
-// Only the variable is hoisted.
-// Function is assigned later.
-
 
 // ===============================
 // 6. Arrow Function
 // ===============================
 
-// add(); // Error
+// add();
 
 const add = () => {
     console.log("Arrow Function");
 };
 
 add();
-
-// Explanation:
-// Arrow functions are not hoisted.
-// 'const' stays in TDZ.
 
 
 // ===============================
@@ -108,12 +85,6 @@ function showName() {
 
 showName();
 
-// Output:
-// Akash
-
-// Explanation:
-// Global variables can be accessed inside functions.
-
 
 // ===============================
 // 8. Function Scope
@@ -126,10 +97,7 @@ function test() {
 
 test();
 
-// console.log(age); // Error
-
-// Explanation:
-// 'age' exists only inside the function.
+// console.log(age);
 
 
 // ===============================
@@ -141,10 +109,7 @@ if (true) {
     console.log(city);
 }
 
-// console.log(city); // Error
-
-// Explanation:
-// 'let' and 'const' are block scoped.
+// console.log(city);
 
 
 // ===============================
@@ -156,10 +121,3 @@ if (true) {
 }
 
 console.log(country);
-
-// Output:
-// India
-
-// Explanation:
-// 'var' ignores block scope.
-// It becomes function/global scoped.
