@@ -42,7 +42,7 @@ console.log(college);
 // ===============================
 
 const {
-  address: { city, state }
+  address: { city:town, state }
 } = student;
 
 console.log(city);
