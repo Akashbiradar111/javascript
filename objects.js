@@ -1,3 +1,4 @@
+/*
 // objects : stores data as a key value pairs.
 
 let student = {
@@ -58,3 +59,77 @@ let cars = [
 
 // Access values:
 console.log(cars[1].toyota);
+
+
+
+*/
+
+
+
+let employees = {
+    name : "vaibhav",
+    emid : "em123",
+    phno : 6363666147,
+    desg : "software engineer",
+    MD : {
+        ownername : "akash",
+        phno : 9380727701
+    }
+ };
+
+ console.log(employees);
+
+
+console.log(employees.name);
+
+//update 
+employees.desg = "business man";
+console.log(employees);
+
+// add
+employees.home ="klb";
+console.log(employees);
+
+
+delete employees.age;
+console.log(employees);
+
+
+
+console.log(employees.MD);
+
+
+
+
+
+employees.MD.ownername = "vaibhav";
+
+console.log(employees);
+
+
+employees.MD.age = 34;
+console.log(employees);
+
+
+delete employees.MD.age ;
+console.log(employees);
+
+
+
+
+
+
+let man = [
+    {
+    name : "akash",
+    age  :  23,
+    phno : 9380727701
+},
+{
+    name : "alok",
+    age  :  23,
+    phno : 9382327701
+    
+}];
+
+console.log(man);
