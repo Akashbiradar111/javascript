@@ -9,6 +9,7 @@ D)Easier to understand
 */
 //
 
+
 function wakeUp() {
     console.log("Wake up");
 }
@@ -35,6 +36,7 @@ C) Non-blocking
 D) More efficient for time-consuming operations
 
 */
+// one 
 
 console.log("Order Food");
 
@@ -44,3 +46,40 @@ setTimeout(() => {
 
 console.log("Watching YouTube");
 
+// two
+
+console.log("A");
+
+setTimeout(() => {
+    console.log("B");
+}, 100);
+
+setTimeout(() => {
+    console.log("C");
+}, 0);
+
+console.log("D");
+
+setTimeout(() => {
+    console.log("E");
+}, 0);
+
+console.log("F");
+
+
+
+// three
+
+console.log("1");
+
+setTimeout(() => {
+    console.log("2");
+}, 0);
+
+console.log("3");
+
+setTimeout(() => {
+    console.log("4");
+}, 0);
+
+console.log("5");
