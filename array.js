@@ -144,7 +144,6 @@ A.splice(1, 2, "X", "Y");
 
 console.log(A);
 
-*/
 
 // includes : Checks whether an element exists.
 
