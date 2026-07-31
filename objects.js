@@ -1,4 +1,4 @@
-/*
+
 // objects : stores data as a key value pairs.
 
 let student = {
@@ -62,7 +62,7 @@ console.log(cars[1].toyota);
 
 
 
-*/
+
 
 
 

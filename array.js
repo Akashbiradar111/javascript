@@ -1,4 +1,4 @@
-/*
+
 
 //array: stores multiple values in one variable
 
@@ -75,9 +75,9 @@ console.log(a.concat(b));
 
 
 
-*/
 
-/*
+
+
 //slice examples 
 
 let A = ["akash","abhi","aditya","nihal"];
